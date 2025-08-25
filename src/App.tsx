@@ -1,8 +1,9 @@
-function App() {
-  return (
-    <>
-    </>
-  )
-}
+import MainLayout from '@components/layouts/MainLayout';
 
-export default App
+export default function App() {
+  return (
+    <MainLayout>
+      <div></div>
+    </MainLayout>
+  );
+}
