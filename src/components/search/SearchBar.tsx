@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { MagnifierIcon } from '@icons/Icons';
 import type { ApiResult } from '@customTypes/apiResults.types';
+import SearchMenu from '@components/search/SearchMenu';
 
 export default function SearchBar() {
   const [query, setQuery] = useState<string>('');
@@ -17,43 +18,28 @@ export default function SearchBar() {
     };
 
     const timer = setTimeout(() => {
-      getSearch();
+      if (query.length >= 3) getSearch();
     }, 200);
 
     return () => clearTimeout(timer);
   }, [query]);
 
   return (
-    <>
-      <div className="relative">
-        <MagnifierIcon className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-neutral-400" />
+    <div className="relative mx-auto max-w-xs md:max-w-lg lg:max-w-2xl">
+      <MagnifierIcon className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-neutral-400" />
 
-        <input
-          type="text"
-          aria-label="Search bar"
-          placeholder="Search APIs, categories, or providers..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          className="pl-12 py-3.25 w-full rounded-md focus:outline-none focus:ring-1 focus:ring-violet-500 border border-neutral-800 bg-neutral-800/30 text-neutral-400 text-sm transition-all duration-200"
-        />
+      <input
+        type="text"
+        aria-label="Search bar"
+        placeholder="Search APIs, categories, or providers..."
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        className="pl-12 py-3.25 w-full rounded-md focus:outline-none focus:ring-1 focus:ring-violet-500 border border-neutral-800 bg-neutral-800/30 text-neutral-400 text-sm transition-all duration-200"
+      />
+
+      <div className="absolute z-10 w-full">
+        <SearchMenu query={query} results={results} />
       </div>
-
-      {results.length > 0 && (
-        <ul className="w-full rounded-md border border-neutral-800 bg-neutral-800/30">
-          {results.map((result, index) => (
-            <li key={index} className="py-2 px-12 rounded-md border border-neutral-800">
-              <a
-                href={result.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-neutral-400"
-              >
-                {result.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
-    </>
+    </div>
   );
 }

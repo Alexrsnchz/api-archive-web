@@ -5,6 +5,7 @@ export default function App() {
   return (
     <MainLayout>
       <Hero />
+      <div className="min-h-screen"></div>
     </MainLayout>
   );
 }

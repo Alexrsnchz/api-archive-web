@@ -5,6 +5,11 @@ export interface ApiResult {
   author: string;
   url: string;
   categoryId: number;
-  createdAt?: Date;
-  updatedAt?: Date;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+export interface SearchMenuProps {
+  query: string;
+  results: ApiResult[];
 }

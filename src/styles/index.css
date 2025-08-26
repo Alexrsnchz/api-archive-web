@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+/* Chrome, Edge, Safari browsers */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6b7280;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #9ca3af;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Firefox browser */
+* {
+    scrollbar-color: #6b7280 transparent;
+}
