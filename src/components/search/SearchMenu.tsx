@@ -8,7 +8,7 @@ export default function SearchMenu({ query, results }: SearchMenuProps) {
   return (
     <div className="mt-2">
       {results.length !== 0 ? (
-        <ul className="max-h-[134px] rounded-md overflow-y-scroll border border-neutral-800 bg-neutral-800/30">
+        <ul className="max-h-[115px] md:max-h-[158px] lg:max-h-[178px] rounded-md overflow-y-scroll border border-neutral-800 bg-neutral-800/30">
           {results.map((item, index) => (
             <li
               key={index}
@@ -27,7 +27,7 @@ export default function SearchMenu({ query, results }: SearchMenuProps) {
           ))}
         </ul>
       ) : (
-        <div className="flex justify-center h-[134px] rounded-md border border-neutral-800 bg-neutral-800/30">
+        <div className="flex justify-center h-[115px] md:h-[158px] lg:h-[178px] rounded-md border border-neutral-800 bg-neutral-800/30">
           <div className="flex items-center gap-2">
             <MagnifierXIcon className="size-4 text-neutral-400" />
             <span className="text-sm text-neutral-400">No results found.</span>

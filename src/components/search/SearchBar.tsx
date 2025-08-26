@@ -31,7 +31,7 @@ export default function SearchBar() {
       <input
         type="text"
         aria-label="Search bar"
-        placeholder="Search APIs, categories, or providers..."
+        placeholder="Search the APIs name..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         className="pl-12 py-3.25 w-full rounded-md focus:outline-none focus:ring-1 focus:ring-violet-500 border border-neutral-800 bg-neutral-800/30 text-neutral-400 text-sm transition-all duration-200"
