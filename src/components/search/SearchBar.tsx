@@ -12,8 +12,8 @@ export default function SearchBar() {
       const response = await fetch(
         `http://localhost:3000/api/apis/search?query=${encodeURIComponent(query)}`,
       );
-      const data = await response.json();
 
+      const data = await response.json();
       setResults(data);
     };
 
