@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { MagnifierIcon } from '@icons/Icons';
-import type { ApiResult } from '@customTypes/apiResults.types';
+import type { ApiProps } from '@customTypes/apis.types';
 import SearchMenu from '@components/search/SearchMenu';
 
 export default function SearchBar() {
   const [query, setQuery] = useState<string>('');
-  const [results, setResults] = useState<ApiResult[]>([]);
+  const [results, setResults] = useState<ApiProps[]>([]);
 
   useEffect(() => {
     const getSearch = async () => {

@@ -1,4 +1,4 @@
-import type { SearchMenuProps } from '@customTypes/apiResults.types';
+import type { SearchMenuProps } from '@customTypes/apis.types';
 import { ExternalLinkIcon, MagnifierXIcon } from '@icons/Icons';
 
 export default function SearchMenu({ query, results }: SearchMenuProps) {
