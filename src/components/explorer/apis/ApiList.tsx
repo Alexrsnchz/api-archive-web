@@ -4,7 +4,7 @@ import { ExternalLinkIcon, LeftArrowIcon } from '@icons/Icons';
 
 export default function ApiList({
   categoryId,
-  /*categoryIcon: Icon,*/
+  categoryIcon: Icon,
   categoryName,
   onBack,
 }: ApiListProps) {
@@ -26,7 +26,7 @@ export default function ApiList({
   return (
     <>
       <div className="flex justify-center items-center gap-3">
-        {/*<Icon className="size-6 text-gray-100" />*/}
+        <Icon className="size-6 text-gray-100" />
         <h2 className="text-3xl font-bold text-center text-gray-100">{categoryName}</h2>
       </div>
 

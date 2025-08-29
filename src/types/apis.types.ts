@@ -1,5 +1,4 @@
-import { IconProps } from '@customTypes/general.types';
-import * as React from 'react';
+import type { IconMapProps } from '@customTypes/general.types';
 
 export interface ApiProps {
   id: string;
@@ -20,7 +19,7 @@ export interface SearchMenuProps {
 
 export interface ApiListProps {
   categoryId: number;
-  /*categoryIcon: React.ComponentType<IconProps>;*/
+  categoryIcon: IconMapProps;
   categoryName: string;
   onBack: () => void;
 }

@@ -1,5 +1,6 @@
 export interface CategoryProps {
   id: number;
+  icon: string;
   name: string;
   _count: {
     apis: number;
