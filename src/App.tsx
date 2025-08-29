@@ -7,7 +7,6 @@ export default function App() {
     <MainLayout>
       <Hero />
       <Explorer />
-      <div className="min-h-screen"></div>
     </MainLayout>
   );
 }
