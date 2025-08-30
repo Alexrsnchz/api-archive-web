@@ -8,5 +8,9 @@ export interface CategoryProps {
 }
 
 export interface CategoryListProps {
-  onSelectCategory: (category: CategoryProps) => void;
+  selectCategory: (category: CategoryProps) => void;
+}
+
+export interface CategoryCardProps extends CategoryListProps {
+  category: CategoryProps;
 }

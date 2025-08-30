@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+    --color-midnight-400: oklch(0.68 0.25 285);
+}
+
+.glow {
+    box-shadow: 0 0 20px color-mix(in oklch, var(--color-midnight-400) 30%, transparent);
+}
+
+.glow-hover:hover {
+    box-shadow: 0 0 30px color-mix(in oklch, var(--color-midnight-400) 50%, transparent);
+}
+
+
 /* Chrome, Edge, Safari browsers */
 ::-webkit-scrollbar {
     width: 8px;
