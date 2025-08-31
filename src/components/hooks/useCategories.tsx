@@ -6,13 +6,13 @@ export function useCategories() {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<Error | null>(null);
 
-  const url = 'http://localhost:3000/api/categories';
+  const url = import.meta.env.VITE_REACT_API_URL;
 
   useEffect(() => {
     const fetchCategories = async () => {
       try {
         setLoading(true);
-        const response = await fetch(url);
+        const response = await fetch(`${url}/categories`);
 
         if (!response.ok) console.error('Error fetching categories: ' + response.status);
 
