@@ -12,11 +12,6 @@ export interface ApiProps {
   updatedAt: Date;
 }
 
-export interface SearchMenuProps {
-  query: string;
-  results: ApiProps[];
-}
-
 export interface ApiListProps {
   categoryId: number;
   categoryIcon: IconMapProps;
