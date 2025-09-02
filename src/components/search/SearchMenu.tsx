@@ -15,7 +15,7 @@ function MenuLoad() {
 function MenuError() {
   return (
     <div className="flex justify-center items-center h-full">
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-1">
         <ServerOffIcon className="size-6 text-neutral-400" />
         <span className="text-neutral-400">An error has occurred</span>
       </div>
@@ -48,7 +48,7 @@ function MenuList({ results }: SearchListProps) {
 function MenuNoResults() {
   return (
     <div className="flex justify-center items-center h-full">
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-1">
         <OpenBoxIcon className="size-6 text-neutral-400" />
         <span className="text-neutral-400">No results</span>
       </div>
