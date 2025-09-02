@@ -1,17 +1,32 @@
 @import "tailwindcss";
 
+:root {
+    --midnight-50:  oklch(0.95 0.05 285);
+    --midnight-100: oklch(0.88 0.06 285);
+    --midnight-200: oklch(0.78 0.08 285);
+    --midnight-300: oklch(0.72 0.12 285);
+    --midnight-400: oklch(0.68 0.25 285);
+    --midnight-500: oklch(0.60 0.28 285);
+    --midnight-600: oklch(0.50 0.30 285);
+    --midnight-700: oklch(0.40 0.25 285);
+    --midnight-800: oklch(0.30 0.20 285);
+    --midnight-900: oklch(0.20 0.15 285);
+    --midnight-950: oklch(0.12 0.12 285);
+}
+
 @theme {
-    --color-midnight-400: oklch(0.68 0.25 285);
+    --color-midnight-50:  var(--midnight-50);
+    --color-midnight-100: var(--midnight-100);
+    --color-midnight-200: var(--midnight-200);
+    --color-midnight-300: var(--midnight-300);
+    --color-midnight-400: var(--midnight-400);
+    --color-midnight-500: var(--midnight-500);
+    --color-midnight-600: var(--midnight-600);
+    --color-midnight-700: var(--midnight-700);
+    --color-midnight-800: var(--midnight-800);
+    --color-midnight-900: var(--midnight-900);
+    --color-midnight-950: var(--midnight-950);
 }
-
-.glow {
-    box-shadow: 0 0 20px color-mix(in oklch, var(--color-midnight-400) 30%, transparent);
-}
-
-.glow-hover:hover {
-    box-shadow: 0 0 30px color-mix(in oklch, var(--color-midnight-400) 50%, transparent);
-}
-
 
 /* Chrome, Edge, Safari browsers */
 ::-webkit-scrollbar {
