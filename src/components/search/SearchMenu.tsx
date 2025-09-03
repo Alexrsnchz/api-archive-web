@@ -5,8 +5,8 @@ function MenuLoad() {
   return (
     <div className="flex justify-center items-center h-full">
       <div className="flex items-center gap-2">
-        <LoaderIcon className="size-5 text-neutral-400" />
-        <span className="text-neutral-400">Searching...</span>
+        <LoaderIcon className="size-5 md:size-6 text-neutral-400" />
+        <span className="text-sm md:text-md text-neutral-400">Searching...</span>
       </div>
     </div>
   );
@@ -16,8 +16,8 @@ function MenuError() {
   return (
     <div className="flex justify-center items-center h-full">
       <div className="flex flex-col items-center gap-1">
-        <ServerOffIcon className="size-6 text-neutral-400" />
-        <span className="text-neutral-400">An error has occurred</span>
+        <ServerOffIcon className="size-5 md:size-6 text-neutral-400" />
+        <span className="text-sm md:text-md text-neutral-400">An error has occurred</span>
       </div>
     </div>
   );
@@ -49,8 +49,8 @@ function MenuNoResults() {
   return (
     <div className="flex justify-center items-center h-full">
       <div className="flex flex-col items-center gap-1">
-        <OpenBoxIcon className="size-6 text-neutral-400" />
-        <span className="text-neutral-400">No results</span>
+        <OpenBoxIcon className="size-5 md:size-6 text-neutral-400" />
+        <span className="text-sm md:text-md text-neutral-400">No results</span>
       </div>
     </div>
   );
