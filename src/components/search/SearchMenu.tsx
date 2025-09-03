@@ -63,7 +63,7 @@ export default function SearchMenu({ loading, results, hasSearched, error }: Sea
 
   return (
     <div
-      className={`mt-2 h-[115px] max-h-[115px] md:h-[158px] md:max-h-[158px] lg:h-[178px] lg:max-h-[178px] rounded-md ${results.length > 0 ? 'overflow-y-scroll' : ''} border border-neutral-800 bg-neutral-900`}
+      className={`mt-2 h-[115px] max-h-[115px] md:h-[158px] md:max-h-[158px] lg:h-[178px] lg:max-h-[178px] rounded-lg ${results.length > 0 ? 'overflow-y-scroll' : ''} border border-neutral-800 bg-neutral-900`}
     >
       {loading ? (
         <MenuLoad />

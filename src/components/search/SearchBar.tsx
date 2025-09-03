@@ -51,7 +51,7 @@ export default function SearchBar() {
         value={query}
         onChange={handleInputChange}
         onFocus={handleInputFocus}
-        className="pl-12 py-3.25 w-full rounded-md focus:outline-none focus:shadow-[0_0_10px_rgba(139,92,246,0.5)] focus:ring-1 focus:ring-midnight-400 border border-neutral-800 bg-neutral-800/30 text-neutral-400 text-sm transition-all duration-200"
+        className="pl-12 py-3.25 w-full rounded-lg focus:outline-none focus:shadow-[0_0_10px_rgba(139,92,246,0.5)] focus:ring-1 focus:ring-midnight-400 border border-neutral-800 bg-neutral-800/30 text-neutral-400 text-sm transition-all duration-200"
       />
 
       <div className="absolute z-10 w-full">
