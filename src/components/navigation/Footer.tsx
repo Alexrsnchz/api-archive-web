@@ -13,7 +13,7 @@ export default function Footer() {
         </div>
 
         <div className="md:hidden flex flex-col items-center">
-          <div className="flex items-center gap-3">
+          <div className="flex gap-3">
             <ArchiveIcon className="size-7 text-midnight-400" />
             <span className="text-2xl font-semibold text-neutral-100">API Archive</span>
           </div>
