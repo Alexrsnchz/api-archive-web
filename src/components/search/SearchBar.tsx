@@ -41,7 +41,7 @@ export default function SearchBar() {
   };
 
   return (
-    <div ref={searchBarRef} className="relative mx-auto max-w-xs md:max-w-lg lg:max-w-2xl">
+    <div ref={searchBarRef} className="relative mx-auto max-w-sm md:max-w-lg lg:max-w-2xl">
       <MagnifierIcon className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-neutral-400" />
 
       <input
