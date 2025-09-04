@@ -16,7 +16,7 @@ export default function Explorer() {
   };
 
   return (
-    <section className="py-8 md:py-10 lg:py-25">
+    <section className="py-12 md:py-20 lg:py-25">
       {!selectedCategory ? (
         <CategoryList selectCategory={handleSelect} />
       ) : (
