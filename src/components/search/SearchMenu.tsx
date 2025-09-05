@@ -34,7 +34,7 @@ function MenuList({ results }: SearchListProps) {
             rel="noopener noreferrer"
             className="flex items-center pl-4.25 py-3 gap-3"
           >
-            <ExternalLinkIcon className="size-4 text-neutral-400 group-hover:text-ash-200" />
+            <ExternalLinkIcon className="size-4 text-neutral-400 group-hover:text-neutral-200" />
             <span className="text-sm text-neutral-400 group-hover:text-neutral-200">
               {item.name}
             </span>
