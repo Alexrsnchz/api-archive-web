@@ -9,7 +9,7 @@ export default function MainLayout({ children }: LayoutProps) {
         <Header />
       </header>
       <main>
-        <div className="px-6 md:px-0 mx-auto max-w-4xl">{children}</div>
+        <div className="px-6 md:px-16 lg:px-0 mx-auto max-w-4xl">{children}</div>
       </main>
       <footer>
         <Footer />

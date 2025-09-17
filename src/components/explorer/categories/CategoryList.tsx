@@ -5,10 +5,11 @@ import CategorySkeleton from '@components/explorer/categories/CategorySkeleton';
 import CategoryCard from '@components/explorer/categories/CategoryCard';
 import { OpenBoxIcon } from '@icons/Icons';
 import Paginator from '@components/explorer/controls/Paginator';
+import { useResponsiveLimit } from '@components/hooks/useCategoryLimit';
 
 export default function CategoryList({ selectCategory }: CategoryListProps) {
   const [page, setPage] = useState(1);
-  const limit = 8;
+  const limit = useResponsiveLimit();
   const { categories, pagination, loading, error } = useCategories(page, limit);
 
   return (
@@ -17,7 +18,7 @@ export default function CategoryList({ selectCategory }: CategoryListProps) {
 
       {!error ? (
         <>
-          <div className="grid grid-cols-4 gap-4 mt-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
             {loading
               ? Array.from({ length: limit }).map((_, i) => <CategorySkeleton key={i} />)
               : categories.map((item) => (

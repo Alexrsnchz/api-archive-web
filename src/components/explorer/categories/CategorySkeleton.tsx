@@ -1,6 +1,6 @@
 export default function CategorySkeleton() {
   return (
-    <article className="flex flex-col justify-center items-center gap-3 py-10 rounded-lg border border-neutral-800 animate-pulse">
+    <article className="flex flex-col justify-center items-center gap-3 py-4 md:py-10 rounded-lg border border-neutral-800 animate-pulse">
       <div className="p-3 rounded-lg bg-neutral-800">
         <div className="size-5"></div>
       </div>
