@@ -51,3 +51,7 @@
 * {
     scrollbar-color: #6b7280 transparent;
 }
+
+body {
+    font-family: 'Roboto Variable', sans-serif;
+}

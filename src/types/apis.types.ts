@@ -18,3 +18,7 @@ export interface ApiListProps {
   categoryName: string;
   onBack: () => void;
 }
+
+export interface ApiCardProps {
+  api: ApiProps;
+}

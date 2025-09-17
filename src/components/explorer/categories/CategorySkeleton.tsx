@@ -7,7 +7,7 @@ export default function CategorySkeleton() {
 
       <div className="flex flex-col items-center">
         <span className="px-15 py-2.5 mt-2 rounded bg-neutral-700"></span>
-        <span className="px-6 py-2.5 mt-3 rounded bg-neutral-800"></span>
+        <span className="px-6 py-2.5 mt-2.5 rounded bg-neutral-800"></span>
       </div>
     </article>
   );
