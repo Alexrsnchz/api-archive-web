@@ -1,16 +1,11 @@
-import { useState } from 'react';
 import type { CategoryListProps } from '@customTypes/categories.types';
 import { useCategories } from '@components/hooks/useCategories';
 import CategorySkeleton from '@components/explorer/categories/CategorySkeleton';
 import CategoryCard from '@components/explorer/categories/CategoryCard';
 import { OpenBoxIcon } from '@icons/Icons';
-import Paginator from '@components/explorer/controls/Paginator';
-import { useResponsiveLimit } from '@components/hooks/useCategoryLimit';
 
 export default function CategoryList({ selectCategory }: CategoryListProps) {
-  const [page, setPage] = useState(1);
-  const limit = useResponsiveLimit();
-  const { categories, pagination, loading, error } = useCategories(page, limit);
+  const { categories, loading, error } = useCategories();
 
   return (
     <>
@@ -20,19 +15,11 @@ export default function CategoryList({ selectCategory }: CategoryListProps) {
         <>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
             {loading
-              ? Array.from({ length: limit }).map((_, i) => <CategorySkeleton key={i} />)
+              ? Array.from({ length: 8 }).map((_, i) => <CategorySkeleton key={i} />)
               : categories.map((item) => (
                   <CategoryCard key={item.id} category={item} selectCategory={selectCategory} />
                 ))}
           </div>
-
-          {pagination && (
-            <Paginator
-              page={pagination.page}
-              totalPages={pagination.totalPages}
-              onPageChange={setPage}
-            />
-          )}
         </>
       ) : (
         <div className="flex justify-center items-center mt-8 w-full h-[410.5px] rounded-lg border border-neutral-800">
