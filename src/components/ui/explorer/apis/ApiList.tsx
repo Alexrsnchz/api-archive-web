@@ -14,9 +14,9 @@ export default function ApiList({
   onBack,
 }: ApiListProps) {
   const { apis, loading, error } = useApis(categoryId);
-  const { isMobile } = useBreakpoint();
+  const { isMobile, isTablet } = useBreakpoint();
 
-  const itemsPerPage = isMobile ? 3 : 6;
+  const itemsPerPage = isMobile ? 3 : isTablet ? 4 : 6;
 
   const [currentPage, setCurrentPage] = useState(0);
 

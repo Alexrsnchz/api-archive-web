@@ -9,9 +9,9 @@ import { useBreakpoint } from '@components/hooks/useBreakpoint';
 
 export default function CategoryList({ selectCategory }: CategoryListProps) {
   const { categories, loading, error } = useCategories();
-  const { isMobile } = useBreakpoint();
+  const { isMobile, isTablet } = useBreakpoint();
 
-  const itemsPerPage = isMobile ? 4 : 8;
+  const itemsPerPage = isMobile ? 4 : isTablet ? 6 : 8;
 
   const [currentPage, setCurrentPage] = useState(0);
 
