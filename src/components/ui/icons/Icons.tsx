@@ -318,7 +318,7 @@ export function LeftArrowIcon({ className }: IconProps) {
   );
 }
 
-export function ChevronLeftIcon({ className }: IconProps) {
+export function ArrowLeftIcon({ className }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -332,12 +332,13 @@ export function ChevronLeftIcon({ className }: IconProps) {
       strokeLinejoin="round"
       className={className}
     >
-      <path d="m15 18-6-6 6-6" />
+      <path d="m12 19-7-7 7-7" />
+      <path d="M19 12H5" />
     </svg>
   );
 }
 
-export function ChevronRightIcon({ className }: IconProps) {
+export function ArrowRightIcon({ className }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -351,7 +352,8 @@ export function ChevronRightIcon({ className }: IconProps) {
       strokeLinejoin="round"
       className={className}
     >
-      <path d="m9 18 6-6-6-6" />
+      <path d="M5 12h14" />
+      <path d="m12 5 7 7-7 7" />
     </svg>
   );
 }

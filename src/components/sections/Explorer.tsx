@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import CategoryList from '@components/explorer/categories/CategoryList';
-import ApiList from '@components/explorer/apis/ApiList';
+import CategoryList from '@components/ui/explorer/categories/CategoryList';
+import ApiList from '@components/ui/explorer/apis/ApiList';
 import type { CategoryProps } from '@customTypes/categories.types';
-import { IconMap } from '@icons/IconMap';
+import { IconMap } from '@components/ui/icons/IconMap';
 
 export default function Explorer() {
   const [selectedCategory, setSelectedCategory] = useState<CategoryProps | null>(null);

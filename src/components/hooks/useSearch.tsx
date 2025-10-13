@@ -16,7 +16,11 @@ export default function useSearch() {
         setLoading(true);
         const response = await fetch(`${url}/apis/search?query=${encodeURIComponent(query)}`);
 
-        if (!response.ok) console.error('Error fetching search results: ' + response.status);
+        if (!response.ok) {
+          const error = new Error(`Error fetching search results: ${response.status}`);
+          setError(error);
+          return;
+        }
 
         const data = await response.json();
         setResults(data);

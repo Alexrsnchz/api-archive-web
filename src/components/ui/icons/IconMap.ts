@@ -7,7 +7,7 @@ import {
   PinIcon,
   ShieldIcon,
   TranslatorIcon,
-} from '@icons/Icons';
+} from '@components/ui/icons/Icons';
 import type { IconMapProps } from '@customTypes/general.types';
 
 export const IconMap: Record<string, IconMapProps> = {

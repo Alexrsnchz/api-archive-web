@@ -1,4 +1,4 @@
-import SearchBar from '@components/search/SearchBar';
+import SearchBar from '@components/ui/search/SearchBar';
 
 export default function Hero() {
   return (

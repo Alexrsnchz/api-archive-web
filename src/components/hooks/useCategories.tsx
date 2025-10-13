@@ -12,12 +12,16 @@ export function useCategories() {
     const fetchCategories = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`${url}/categories}`);
+        const response = await fetch(`${url}/categories`);
 
-        if (!response.ok) console.error('Error fetching categories: ' + response.status);
+        if (!response.ok) {
+          const error = new Error(`Error fetching categories: ${response.status}`);
+          setError(error);
+          return;
+        }
 
         const data = await response.json();
-        setCategories(data.data);
+        setCategories(data);
       } catch (error) {
         setError(error as Error);
       } finally {

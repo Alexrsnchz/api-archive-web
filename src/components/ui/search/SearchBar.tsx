@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, ChangeEvent } from 'react';
-import { MagnifierIcon } from '@icons/Icons';
-import SearchMenu from '@components/search/SearchMenu';
+import { MagnifierIcon } from '@components/ui/icons/Icons';
+import SearchMenu from '@components/ui/search/SearchMenu';
 import useSearch from '@components/hooks/useSearch';
 
 export default function SearchBar() {

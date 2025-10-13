@@ -1,4 +1,4 @@
-import { GitHubIcon } from '@icons/Icons';
+import { GitHubIcon } from '@components/ui/icons/Icons';
 
 export default function Contribution() {
   return (

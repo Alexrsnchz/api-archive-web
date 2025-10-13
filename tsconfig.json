@@ -11,7 +11,7 @@
     "baseUrl": ".",
     "paths": {
       "@styles/*": [
-        "src/styles/*"
+        "src/assets/styles/*"
       ],
       "@customTypes/*": [
         "src/types/*"
@@ -21,12 +21,6 @@
       ],
       "@icons/*": [
         "src/assets/icons/*"
-      ],
-      "@logos/*": [
-        "src/assets/logos/*"
-      ],
-      "@flags/*": [
-        "src/assets/flags/*"
       ],
       "@components/*": [
         "src/components/*"

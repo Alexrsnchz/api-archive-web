@@ -1,4 +1,4 @@
-import MainLayout from '@components/layouts/MainLayout';
+import MainLayout from '@components/structures/layouts/MainLayout';
 import Hero from '@components/sections/Hero';
 import Explorer from '@components/sections/Explorer';
 import Contribution from '@components/sections/Contribution';

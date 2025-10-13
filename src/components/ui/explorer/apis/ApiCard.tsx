@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from '@icons/Icons';
+import { ExternalLinkIcon } from '@components/ui/icons/Icons';
 import type { ApiCardProps } from '@customTypes/apis.types';
 
 export default function ApiCard({ api }: ApiCardProps) {

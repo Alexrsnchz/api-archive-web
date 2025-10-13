@@ -14,7 +14,11 @@ export function useApis(categoryId: number) {
         setLoading(true);
         const response = await fetch(`${url}/apis/explorer?categoryId=${categoryId}`);
 
-        if (!response.ok) console.error('Error fetching apis: ' + response.status);
+        if (!response.ok) {
+          const error = new Error(`Error fetching APIs: ${response.status}`);
+          setError(error);
+          return;
+        }
 
         const data = await response.json();
         setApis(data);

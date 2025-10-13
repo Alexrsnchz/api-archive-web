@@ -1,5 +1,10 @@
 import type { SearchListProps, SearchMenuProps } from '@customTypes/search.types';
-import { ExternalLinkIcon, LoaderIcon, OpenBoxIcon, ServerOffIcon } from '@icons/Icons';
+import {
+  ExternalLinkIcon,
+  LoaderIcon,
+  OpenBoxIcon,
+  ServerOffIcon,
+} from '@components/ui/icons/Icons';
 
 function MenuLoad() {
   return (

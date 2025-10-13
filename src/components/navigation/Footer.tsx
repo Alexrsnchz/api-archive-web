@@ -1,4 +1,4 @@
-import { ArchiveIcon } from '@icons/Icons';
+import { ArchiveIcon } from '@components/ui/icons/Icons';
 
 export default function Footer() {
   return (

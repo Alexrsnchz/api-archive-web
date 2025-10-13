@@ -1,6 +1,6 @@
 import { CategoryCardProps } from '@customTypes/categories.types';
-import { IconMap } from '@icons/IconMap';
-import { ArchiveIcon } from '@icons/Icons';
+import { IconMap } from '@components/ui/icons/IconMap';
+import { ArchiveIcon } from '@components/ui/icons/Icons';
 
 export default function CategoryCard({ category, selectCategory }: CategoryCardProps) {
   const Icon = IconMap[category.icon] ?? ArchiveIcon;
