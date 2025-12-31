@@ -2,13 +2,13 @@ import { ArchiveIcon } from '@components/ui/icons/Icons';
 
 export default function Header() {
   return (
-    <nav className="flex justify-center py-4 md:py-6 lg:py-5 bg-transparent border-b border-neutral-800">
+    <header className="flex justify-center py-4 md:py-6 lg:py-5 bg-transparent border-b border-neutral-800">
       <div className="flex items-center gap-4 md:gap-3">
         <ArchiveIcon className="size-7 md:size-10 lg:size-9 text-midnight-400" />
         <span className="text-2xl md:text-4xl lg:text-3xl font-bold text-gray-200">
           API Archive
         </span>
       </div>
-    </nav>
+    </header>
   );
 }

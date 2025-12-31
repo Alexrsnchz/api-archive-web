@@ -2,7 +2,7 @@ import { ArchiveIcon } from '@components/ui/icons/Icons';
 
 export default function Footer() {
   return (
-    <div className="border-t border-neutral-800 py-8 md:py-5">
+    <footer className="border-t border-neutral-800 py-8 md:py-5">
       <div className="flex flex-col md:flex-row justify-between items-center gap-12 mx-auto max-w-2xl lg:max-w-5xl">
         <div className="flex flex-col items-center md:items-start">
           <div className="flex md:items-center gap-3 md:gap-2">
@@ -20,6 +20,6 @@ export default function Footer() {
           <span className="font-medium text-midnight-400"> Alexrsnchz</span>.
         </p>
       </div>
-    </div>
+    </footer>
   );
 }

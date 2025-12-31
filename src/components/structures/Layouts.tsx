@@ -5,15 +5,11 @@ import Footer from '@components/navigation/Footer';
 export function MainLayout({ children }: LayoutProps) {
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      <Header />
       <main>
         <div className="px-6 md:px-16 lg:px-0 mx-auto max-w-4xl">{children}</div>
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   );
 }
