@@ -1,34 +1,4 @@
 {
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "jsx": "react-jsx",
-    "strict": true,
-    "skipLibCheck": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "baseUrl": ".",
-    "paths": {
-      "@styles/*": [
-        "src/assets/styles/*"
-      ],
-      "@customTypes/*": [
-        "src/types/*"
-      ],
-      "@data/*": [
-        "src/assets/data/*"
-      ],
-      "@icons/*": [
-        "src/assets/icons/*"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ]
-    }
-  },
-  "include": [
-    "src",
-    "vite.config.ts"
-  ]
+  "files": [],
+  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
 }

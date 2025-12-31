@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "types": ["vite/client"],
+    "strict": true,
+    "module": "ESNext",
+    "target": "ES2022",
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "verbatimModuleSyntax": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@styles/*": ["src/assets/styles/*"],
+      "@customTypes/*": ["src/types/*"],
+      "@data/*": ["src/assets/data/*"],
+      "@icons/*": ["src/assets/icons/*"],
+      "@components/*": ["src/components/*"]
+    }
+  },
+  "include": ["src"]
+}
