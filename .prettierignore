@@ -1,15 +1,24 @@
-# Modules & Extras #
-node_modules
-.idea
+# IDE config
+.vscode/
+.idea/
 
-# Others
-index.html
+# OS files
+.DS_Store
+Thumbs.db
 
+# General
+node_modules/
+dist/
+coverage/
+.vite/
 
-# Config Files #
-package.json
-pnpm-lock.yaml
+# Package manager
+pnpm-workspace.yaml
 
-# Other Folders
-public
-build
+# Logs / Compilation
+*.log
+*.tgz
+
+# Environment
+.env
+.env.*
