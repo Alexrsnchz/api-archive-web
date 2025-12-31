@@ -1,11 +1,11 @@
 import type { CategoryListProps } from '@customTypes/categories.types';
-import { useCategories } from '@components/hooks/useCategories';
+import { useCategories } from '@hooks/useCategories';
 import CategorySkeleton from '@components/ui/explorer/categories/CategorySkeleton';
 import CategoryCard from '@components/ui/explorer/categories/CategoryCard';
 import { OpenBoxIcon } from '@components/ui/icons/Icons';
 import { useState, useMemo } from 'react';
 import Paginator from '@components/ui/explorer/navTools/Paginator';
-import { useBreakpoint } from '@components/hooks/useBreakpoint';
+import { useBreakpoint } from '@hooks/useBreakpoint';
 
 export default function CategoryList({ selectCategory }: CategoryListProps) {
   const { categories, loading, error } = useCategories();

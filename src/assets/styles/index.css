@@ -1,5 +1,34 @@
 @import "tailwindcss";
 
+/* ===================== */
+/*   Font-face: Roboto   */
+/* ===================== */
+
+@font-face {
+    font-family: 'Roboto Variable';
+    src: url('../fonts/roboto/roboto-latin-400-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Variable';
+    src: url('../fonts/roboto/roboto-latin-500-normal.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Variable';
+    src: url('../fonts/roboto/roboto-latin-600-normal.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Variable';
+    src: url('../fonts/roboto/roboto-latin-700-normal.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
     --midnight-50:  oklch(0.95 0.05 285);
     --midnight-100: oklch(0.88 0.06 285);

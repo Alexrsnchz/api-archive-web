@@ -23,7 +23,8 @@
       "@customTypes/*": ["src/types/*"],
       "@data/*": ["src/assets/data/*"],
       "@icons/*": ["src/assets/icons/*"],
-      "@components/*": ["src/components/*"]
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"]
     }
   },
   "include": ["src"]

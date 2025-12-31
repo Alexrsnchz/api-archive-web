@@ -1,4 +1,4 @@
-import { CategoryCardProps } from '@customTypes/categories.types';
+import type { CategoryCardProps } from '@customTypes/categories.types';
 import { IconMap } from '@components/ui/icons/IconMap';
 import { ArchiveIcon } from '@components/ui/icons/Icons';
 

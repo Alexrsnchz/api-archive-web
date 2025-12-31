@@ -1,7 +1,7 @@
 import type { ApiListProps } from '@customTypes/apis.types';
 import { LeftArrowIcon, OpenBoxIcon } from '@components/ui/icons/Icons';
-import { useApis } from '@components/hooks/useApis';
-import { useBreakpoint } from '@components/hooks/useBreakpoint';
+import { useApis } from '@hooks/useApis';
+import { useBreakpoint } from '@hooks/useBreakpoint';
 import ApiCard from '@components/ui/explorer/apis/ApiCard';
 import ApiSkeleton from '@components/ui/explorer/apis/ApiSkeleton';
 import { useState, useMemo } from 'react';

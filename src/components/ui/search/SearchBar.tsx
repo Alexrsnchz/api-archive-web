@@ -1,7 +1,8 @@
-import { useState, useRef, useEffect, ChangeEvent } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import type { ChangeEvent } from 'react';
 import { MagnifierIcon } from '@components/ui/icons/Icons';
 import SearchMenu from '@components/ui/search/SearchMenu';
-import useSearch from '@components/hooks/useSearch';
+import useSearch from '@hooks/useSearch';
 
 export default function SearchBar() {
   const { query, setQuery, results, loading, hasSearched, error } = useSearch();
